@@ -6,13 +6,16 @@
 }
 
 .check-in-container,
-.check-out-container {
+.check-out-container,
+.family-members {
   margin: 1rem 2rem;
 }
 
 .check-in-container p,
-.check-out-container p {
+.check-out-container p,
+.family-members p {
   margin: .5rem 0;
+  font-weight: bold;
 }
 
 .check-in-container input,
@@ -43,10 +46,7 @@
   p {
     margin-left: 0.5rem;
     font-size: .9rem ;
-<<<<<<< HEAD
     color: #747272;
-=======
->>>>>>> bdbb46eea5acea91d5f011343ee6006b6c47467d
   }
 }
 
@@ -91,4 +91,32 @@ input[type=date]::-webkit-datetime-edit-day-field {
 input[type=date]::-webkit-datetime-edit-year-field {
   -webkit-appearance: none;
   display: none;
+}
+
+.family-members {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+  select {
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: #f1e5e5;
+    border-radius: .3rem;
+    border: none;
+    transition: all .3s;
+    cursor: pointer;
+    color: #747272;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.adults {
+  margin-right: 1rem;
 }
