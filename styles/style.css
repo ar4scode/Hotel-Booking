@@ -120,3 +120,24 @@ input[type=date]::-webkit-datetime-edit-year-field {
 .adults {
   margin-right: 1rem;
 }
+
+.book-room {
+  margin:20rem 2rem;
+  border: none;
+  background-color: #fa9613;
+  font-weight: bold;
+  color: #fff;
+  width: 25rem;
+  padding: 1rem;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: all .5s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(247, 133, 3, 0.9);
+  }
+
+  &:active {
+    opacity: .8;
+  }
+}
