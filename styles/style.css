@@ -2,5 +2,49 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Arial";
+}
+
+.check-in-container,
+.check-out-container {
+  margin: 1rem 2rem;
+}
+
+.check-in-container p,
+.check-out-container p {
+  margin: .5rem 0;
+}
+
+.check-in-container input,
+.check-out-container input {
+  border-radius: .5rem;
+  border: none;
+  background-color: #f1e5e5;
+  transition: all .3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  }
+}
+
+@media (width > 800px) {
+  .check-in-container input,
+  .check-out-container input {
+    width: 20rem;
+    padding: .5rem;
+  }
+}
+
+@media (width < 800px) {
+  .check-in-container input,
+  .check-out-container input {
+    width: 15rem;
+    padding: 0.5rem;
+  }
 }
