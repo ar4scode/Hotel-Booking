@@ -33,18 +33,59 @@
   }
 }
 
+.check-in-output-section,
+.check-out-output-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1e5e5;
+  border-radius: .4rem;
+  padding: .3rem;
+  p {
+    margin-left: 0.5rem;
+    font-size: .9rem ;
+    color: #747272;
+  }
+}
+
 @media (width > 800px) {
   .check-in-container input,
   .check-out-container input {
-    width: 20rem;
+    width: 2rem;
     padding: .5rem;
+  }
+
+  .check-in-output-section,
+  .check-out-output-section {
+    width: 25rem;
   }
 }
 
 @media (width < 800px) {
   .check-in-container input,
   .check-out-container input {
-    width: 15rem;
+    width: 2rem;
     padding: 0.5rem;
   }
+
+  .check-in-output-section,
+  .check-out-output-section {
+    width: 15rem;
+  }
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
 }
