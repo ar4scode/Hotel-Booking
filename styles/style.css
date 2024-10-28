@@ -5,6 +5,11 @@
   font-family: "Arial";
 }
 
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .check-in-container,
 .check-out-container,
 .family-members {
@@ -140,4 +145,50 @@ input[type=date]::-webkit-datetime-edit-year-field {
   &:active {
     opacity: .8;
   }
+}
+
+.images-container{
+  display: flex;
+  margin: 1.5rem .5rem;
+  flex-direction: column;
+}
+
+.images-container .top-pic {
+  position: relative;
+}
+
+.top-pic .tooltip {
+  position: absolute;
+  inset: auto auto 1rem 1rem;
+  color: #fff;
+  .hotel-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .location {
+    margin-left: 0.2rem;
+    font-size: .9rem;
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+.images-container .top-pic img {
+  width: 36.6rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+}
+
+.images-container .bottom-images {
+  margin-top: 0.5rem;
+}
+
+.images-container .bottom-images img {
+  width: 12rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
+  margin-right: 0.2rem;
 }
