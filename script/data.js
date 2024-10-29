@@ -1,4 +1,4 @@
-const hotels = [
+export const hotels = [
   {
     hotelName: "The Royal Horseguards Hotel",
     hotelAddress: "London, United Kingdom",

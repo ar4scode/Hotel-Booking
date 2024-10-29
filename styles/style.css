@@ -192,3 +192,19 @@ input[type=date]::-webkit-datetime-edit-year-field {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .8);
   margin-right: 0.2rem;
 }
+
+.btn-tooltip {
+  position: absolute;
+  background-color: transparent;
+  font-size: 1.5rem;
+  inset: auto 1rem 13rem auto;
+  padding: 1rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  opacity: .6;
+  transition: all .3s;
+  &:hover {
+    filter: contrast(90%);
+    opacity: 1;
+  }
+}
